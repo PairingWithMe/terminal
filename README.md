@@ -22,11 +22,6 @@ Import to iTerm2 colors.
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
-Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in ~/.zshrc.
-
-```
-source ~/.zshrc
-```
 ### [autocomplete](https://github.com/zsh-users/zsh-autosuggestions)
 
 ```
@@ -40,10 +35,13 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
-## Plugins
+## Plugins and Theme
 
 ```
 vi ~/.zshrc
 
+ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(git golang node npm docker docker-compose zsh-syntax-highlighting)
+
+source ~/.zshrc
 ```
